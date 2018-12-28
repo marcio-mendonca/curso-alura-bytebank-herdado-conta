@@ -1,8 +1,10 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 import br.com.bytebank.banco.test.SaldoInsuficienteException;
 
-public abstract class Conta extends Object {
+public abstract class Conta extends Object implements Serializable{
 
 	protected double saldo;
 	private int agencia;
